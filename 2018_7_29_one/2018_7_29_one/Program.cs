@@ -86,7 +86,72 @@ namespace _2018_7_29_one
 
                 Console.WriteLine("곱셈의 값은" + sum4);
             }
-        }
+                // Day 3 나눗셈
+
+            int[] gh = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 };
+            int gh_index;
+            int sum5 = 1024;
+
+            for (gh_index = 9; gh_index >= 0; gh_index--)
+            {
+                sum5 = sum5 / gh[gh_index];
+
+                Console.WriteLine("나눗셈의 값은" + sum5);
+            }
+
+            // Day 4. 
+
+            /*
+             *      *
+             *      **
+             *      ***
+             *      ****
+             *      *****
+             */
+            Console.WriteLine("*");
+            Console.WriteLine("**");
+            Console.WriteLine("***");
+            Console.WriteLine("****");
+            Console.WriteLine("*****");
+
+            int x11 = 0;
+
+            for  (x11 = 0; x11 <= 4; x11++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine("");
+            Console.WriteLine("별을 찍기");
+            int x12 = 4;       // 0 , 1  , 2    , 3     ,4 
+            string[] starArray = {"*","**","***", "****","*****" };
+            for (x12 = 4; x12 >= 0; x12 --)
+            {
+                Console.WriteLine(starArray[x12]);
+            }
+
+            int x14 = 0;
+            int y14 = 0;
+
+            for (x14 = 0; x14 <= 4; x14++)
+            {
+                for (y14 = 0; y14 <= 4; y14++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine("");
+            }
+
+            /*
+             **
+             **
+             **
+             **   
+                
+             *   
+             *   
+             */
+        }  
     }
 }
 
