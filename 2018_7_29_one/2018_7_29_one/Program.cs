@@ -143,15 +143,86 @@ namespace _2018_7_29_one
             }
 
             /*
-             **
-             **
-             **
-             **   
-                
+             *  Day 5. 오늘의 문제
              *   
+             *   *
+             *   **
+             *   ***
+             *   ****
+             *   *****
+             *   
+             *   
+             *   
+             *   1) 아래를 변형해서 위처럼 찍어보세요. 단 Console.Write("*") 는 별 한 개만 찍을 수 있고 Console.Write("**") 이렇게 두개는 안됨
+             *      또한 Console.WriteLine("") 와 같이 줄 바꾸는 것만 허용
+             *   
+             *   2)  아래를 만들어보세요 (열줄)
+             *   
+             *   *
+             *   **
+             *   ***
+             *   ****
+             *   *****
+             *   ******
+             *   *******
+             *   ********
+             *   *********
+             *   **********
+             *   
+             *   3)  역삼각형을 만들어보세요
+             *   
+             *   *****
+             *   ****
+             *   ***
+             *   **
+             *   *
              *   
              */
-        }  
+
+            // Day 5 - 1)
+            int x15 = 0;
+            int y15 = 0;
+            Console.WriteLine("5-1 시작");
+            for (x15 = 0; x15 <= 4; x15++)
+            {
+                for (y15 = 0; y15 <= x15; y15++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine("");
+            }
+            // Day 5 - 2)
+            int x16 = 0;
+            int y16 = 0;
+            Console.WriteLine("5-2 시작");
+
+            for (x16 = 0; x16 <= 9; x16++)
+            {
+                for (y16 = 0; y16 <= x16; y16++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine("");
+            }
+
+            // Day 5 - 3)
+            int x17 = 4;
+            int y17 = 0;
+            Console.WriteLine("5-3 시작");
+
+            for (x17 = 4; x17 >= 0; x17--) 
+            {
+                for (y17 = 0; y17 <= x17; y17++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine("");
+            }
+
+        }
     }
 }
 
