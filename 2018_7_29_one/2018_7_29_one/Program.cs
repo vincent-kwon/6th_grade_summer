@@ -261,7 +261,7 @@ namespace _2018_7_29_one
              *    https://blog.naver.com/einsbon/221001261094 여기 한 번 가서 읽어봐요.
              */
             string input = Console.ReadLine();
-            Console.WriteLine("당신이 방금 입력한 값은" + input);
+            Console.WriteLine("당신이 방금 입력한 값은: " + input);
 
         }
     }
