@@ -222,6 +222,47 @@ namespace _2018_7_29_one
                 Console.WriteLine("");
             }
 
+            /*
+             *  Day 6. 오늘의 문제
+             *   
+             *      *
+             *     * *
+             *    * * *
+             *   * * * *
+             *  
+             *   1) 정삼각형을 만들어 보세요 (for 문 사용 없이요)
+             *      이미 위에서 for 문 없이 찍은 거랑 비슷해요. Console.Write(" ") 하면 공백이 찍혀요
+             *          
+             *    
+             *   아래를 변형해서 위처럼 찍어보세요. 단 Console.Write("*") 는 별 한 개만 찍을 수 있고 Console.Write("**") 이렇게 두개는 안됨
+             *      또한 Console.WriteLine("") 와 같이 줄 바꾸는 것만 허용
+             *   
+             *   2)  아래를 만들어보세요 (열 한 줄)
+             *    
+             *    힌트) 이전에 배운 문제 5-2, 5-3 을 연속으로 답을 붙이면 되지 않을까요?
+             *   
+             *   *
+             *   **
+             *   ***
+             *   ****
+             *   *****
+             *   ******
+             *   *****
+             *   ****
+             *   ***
+             *   **
+             *   *
+             *   
+             *   3) string input = Console.ReadLine(); 
+             *      Console.WriteLine("입력:" + input);
+             *    
+             *    을 실행하면 사용자가 입력하는 글자를 input이라는 변수에 받아서 찍어줘요. 한 번 해보세요.
+             *    
+             *    https://blog.naver.com/einsbon/221001261094 여기 한 번 가서 읽어봐요.
+             */
+            string input = Console.ReadLine();
+            Console.WriteLine("당신이 방금 입력한 값은" + input);
+
         }
     }
 }
