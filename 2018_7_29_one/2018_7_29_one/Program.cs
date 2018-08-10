@@ -208,7 +208,7 @@ namespace _2018_7_29_one
             }
 
             // Day 5 - 3)
-            int x17 = 4;
+           int x17 = 4;
             int y17 = 0;
             Console.WriteLine("5-3 시작");
 
@@ -221,6 +221,7 @@ namespace _2018_7_29_one
 
                 Console.WriteLine("");
             }
+
 
             /*
              *  Day 6. 오늘의 문제
@@ -253,6 +254,12 @@ namespace _2018_7_29_one
              *   **
              *   *
              *   
+             *   
+             *   
+             *   
+             *   
+             *  *   
+             *   
              *   3) string input = Console.ReadLine(); 
              *      Console.WriteLine("입력:" + input);
              *    
@@ -260,9 +267,37 @@ namespace _2018_7_29_one
              *    
              *    https://blog.naver.com/einsbon/221001261094 여기 한 번 가서 읽어봐요.
              */
+
+            int x19 = 0;
+            int y19 = 0;
+            Console.WriteLine("6-2 시작");
+
+            for (x19 = 0; x19 <= 4; x19++)
+            {
+                for (y19 = 0; y19 <= x19; y19++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine("");
+            }
+
+            int x18 = 4;
+            int y18 = 0;
+
+            for (x18 = 4; x18 >= 0; x18--)
+            {
+                for (y18 = 0; y18 <= x18; y18++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine("");
+            }
+
+            Console.WriteLine("6-3 시작");
             string input = Console.ReadLine();
             Console.WriteLine("당신이 방금 입력한 값은: " + input);
-
         }
     }
 }
