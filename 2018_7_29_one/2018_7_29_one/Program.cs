@@ -224,12 +224,13 @@ namespace _2018_7_29_one
 
 
             /*
-             *  Day 6. 오늘의 문제
+             *  Day 6. 오늘의 문제  
              *   
-             *      *
-             *     * *
-             *    * * *
-             *   * * * *
+             *      *   => "   *"
+             *     * *  => "  * *"    
+             *    * * * => " * * *"
+             *   * * * * =>"* * * *"
+             *                 C
              *  
              *   1) 정삼각형을 만들어 보세요 (for 문 사용 없이요)
              *      이미 위에서 for 문 없이 찍은 거랑 비슷해요. Console.Write(" ") 하면 공백이 찍혀요
@@ -267,6 +268,13 @@ namespace _2018_7_29_one
              *    
              *    https://blog.naver.com/einsbon/221001261094 여기 한 번 가서 읽어봐요.
              */
+
+            Console.WriteLine("6-1시작");
+            Console.WriteLine("   *"); // 1. 직접 찍기
+            string str1 = "  * *"; // 한 번 변수를 선언을 하고 
+            Console.WriteLine(str1); // 2. 변수
+            Console.WriteLine(" * * *");
+            Console.WriteLine("* * * *");
 
             int x19 = 0;
             int y19 = 0;
