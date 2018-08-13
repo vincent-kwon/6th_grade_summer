@@ -306,6 +306,47 @@ namespace _2018_7_29_one
             Console.WriteLine("6-3 시작");
             string input = Console.ReadLine();
             Console.WriteLine("당신이 방금 입력한 값은: " + input);
+
+            Console.WriteLine("7-1시작");
+            // 함수: function
+
+            int v71 = MultiplyBy2(2);
+            Console.WriteLine("2를 입력한 MultiplyBy2 값은 " + v71);
+
+            int v72 = MultiplyBy2(1024);
+            Console.WriteLine("1024를 입력한 MultiplyBy2 값은 " + v72);
+
+            int v73 = MultiplyBy2(15000);
+            Console.WriteLine("15000를 입력한 MultiplyBy2 값은 " + v73);
+
+            // Day-8 123456, 654321 => 777777
+        }
+
+        // 함수의 모양
+        // f(x) = 2x + 1;
+        // y = 2x + 1
+        // (1, 3), (2, 5)
+        //  y
+        //  |
+        //  1         +
+        //  1 
+        //  |    +    
+        //  |
+        //  |
+        //  ------------------------------- x
+        //       1   2   3
+        //
+        // 함수의 정의
+        static int MultiplyBy2(int firstInput) // 들어오는 값 input. <== x
+        {
+            int answer = firstInput * 2;
+            return answer; // 부른사람한테 보내주는 값 (리턴값) <= y
+        }
+
+        // Day 8 문제 두 숫자를 함수에 넣어서 더한 결과값을 리턴하는 함수를 완성하시오
+        static int Add(int firstInput, int secondInput) // 들어오는 값 input. <== x
+        {
+         
         }
     }
 }
