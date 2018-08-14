@@ -21,7 +21,7 @@ namespace _2018_7_29_one
 
             int a = 2;
 
-            sum3 = sum3 + a; 
+            sum3 = sum3 + a;
 
             int s = 3;
 
@@ -38,12 +38,12 @@ namespace _2018_7_29_one
             Console.WriteLine("sum3 는 " + sum3);
 
 
-        
+
             int e = W + a + s + d + q;
 
             Console.WriteLine("값은: " + e);
             //        v[0], v[1], v[2], v[3], v[4], v[5] , v[6], v[7],  v[8], v[9]
-            int[] v = { 1 , 2   , 3    , 4  , 5   , 6    , 7   , 8    , 9   , 10 }; // int 다음에 [] 여러개를 선언하겠다. 배열 [0] ~ [9]
+            int[] v = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; // int 다음에 [] 여러개를 선언하겠다. 배열 [0] ~ [9]
 
             Console.WriteLine("배열 첫번째: " + v[0]); // 인덱스 
             Console.WriteLine("배열 두번쨰:" + v[1]);
@@ -74,7 +74,7 @@ namespace _2018_7_29_one
 
             // Day 2. 곱셈
 
-            int[] m= { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int[] m = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
             int u = 0;
 
@@ -86,7 +86,7 @@ namespace _2018_7_29_one
 
                 Console.WriteLine("곱셈의 값은" + sum4);
             }
-                // Day 3 나눗셈
+            // Day 3 나눗셈
 
             int[] gh = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 };
             int gh_index;
@@ -116,15 +116,15 @@ namespace _2018_7_29_one
 
             int x11 = 0;
 
-            for  (x11 = 0; x11 <= 4; x11++)
+            for (x11 = 0; x11 <= 4; x11++)
             {
                 Console.Write("*");
             }
             Console.WriteLine("");
             Console.WriteLine("별을 찍기");
             int x12 = 4;       // 0 , 1  , 2    , 3     ,4 
-            string[] starArray = {"*","**","***", "****","*****" };
-            for (x12 = 4; x12 >= 0; x12 --)
+            string[] starArray = { "*", "**", "***", "****", "*****" };
+            for (x12 = 4; x12 >= 0; x12--)
             {
                 Console.WriteLine(starArray[x12]);
             }
@@ -208,11 +208,11 @@ namespace _2018_7_29_one
             }
 
             // Day 5 - 3)
-           int x17 = 4;
+            int x17 = 4;
             int y17 = 0;
             Console.WriteLine("5-3 시작");
 
-            for (x17 = 4; x17 >= 0; x17--) 
+            for (x17 = 4; x17 >= 0; x17--)
             {
                 for (y17 = 0; y17 <= x17; y17++)
                 {
@@ -319,7 +319,23 @@ namespace _2018_7_29_one
             int v73 = MultiplyBy2(15000);
             Console.WriteLine("15000를 입력한 MultiplyBy2 값은 " + v73);
 
-            // Day-8 123456, 654321 => 777777
+            // Day-8 123456 654321 => 777777
+            int v81 = Add(123456, 654321);
+            Console.WriteLine("Add 값은 " + v81);
+
+            int v82 = Add(20000, 10000);
+            Console.WriteLine("Add 값은 " + v82);
+
+            int v83 = Subtract(1000, 700);
+            Console.WriteLine("Subtract 값은 " + v83);
+
+            int v84 = Multiply(10, 10);
+            Console.WriteLine("Multiply 값은 " + v84);
+
+            int v85 = divide(10, 2);
+            Console.WriteLine("divide 값은 " + v85);
+
+            // Subtract(1000, 300) => 700
         }
 
         // 함수의 모양
@@ -346,8 +362,28 @@ namespace _2018_7_29_one
         // Day 8 문제 두 숫자를 함수에 넣어서 더한 결과값을 리턴하는 함수를 완성하시오
         static int Add(int firstInput, int secondInput) // 들어오는 값 input. <== x
         {
-         
+            return firstInput + secondInput;
         }
+
+        static int Subtract(int firstInput, int secondInput) // 들어오는 값 input. <== x
+        {
+            return firstInput - secondInput;
+
+        }
+        static int Multiply(int firstInput, int secondInput) // 들어오는 값 input. <== x
+        {
+            return firstInput * secondInput;
+
+        }
+
+        static int divide(int firstInput, int secondInput) // 들어오는 값 input. <== x
+        {
+            return firstInput / secondInput;
+
+        }
+
+
+
     }
 }
 
