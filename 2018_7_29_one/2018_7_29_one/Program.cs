@@ -303,7 +303,7 @@ namespace _2018_7_29_one
                 Console.WriteLine("");
             }
 
-            Console.WriteLine("6-3 시작");
+            Console.WriteLine("6-3 시작: 아무거나 입력하세요 !");
             string input = Console.ReadLine();
             Console.WriteLine("당신이 방금 입력한 값은: " + input);
 
@@ -320,12 +320,12 @@ namespace _2018_7_29_one
             Console.WriteLine("15000를 입력한 MultiplyBy2 값은 " + v73);
 
             // Day-8 123456 654321 => 777777
-            int v81 = Add(123456, 654321);
+            int v81 = Add(30, 50);
             Console.WriteLine("Add 값은 " + v81);
 
             int v82 = Add(20000, 10000);
             Console.WriteLine("Add 값은 " + v82);
-
+            
             int v83 = Subtract(1000, 700);
             Console.WriteLine("Subtract 값은 " + v83);
 
@@ -336,6 +336,20 @@ namespace _2018_7_29_one
             Console.WriteLine("divide 값은 " + v85);
 
             // Subtract(1000, 300) => 700
+
+            // Day-9
+            Console.WriteLine("9일차. 숫자 입력하세요 !!!");
+            string v100 = Console.ReadLine();
+            int v101 = Convert.ToInt32(v100);
+            Console.WriteLine("당신이 방금 입력한 1st 값은: "  + v101);
+            Console.WriteLine("숫자 하나더 입력하세요 !!!");
+            string v103 = Console.ReadLine();
+            int v105 = Convert.ToInt32(v103);
+            Console.WriteLine("당신이 방금 입력한 값은: " + v105);
+            int v90 = Add(v105, v101);
+
+            Console.WriteLine("숙제 값은" + v90);
+
         }
 
         // 함수의 모양
@@ -351,7 +365,7 @@ namespace _2018_7_29_one
         //  |
         //  ------------------------------- x
         //       1   2   3
-        //
+        //  
         // 함수의 정의
         static int MultiplyBy2(int firstInput) // 들어오는 값 input. <== x
         {
@@ -364,6 +378,8 @@ namespace _2018_7_29_one
         {
             return firstInput + secondInput;
         }
+
+    
 
         static int Subtract(int firstInput, int secondInput) // 들어오는 값 input. <== x
         {
@@ -381,9 +397,6 @@ namespace _2018_7_29_one
             return firstInput / secondInput;
 
         }
-
-
-
     }
 }
 
