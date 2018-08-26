@@ -6,6 +6,7 @@ namespace _2018_7_29_one
     {
         static void Main(string[] args)
         {
+#if DAY1_9
             // Day 1. 
 
             // 숫자를 나타내는 공간은 int 
@@ -350,7 +351,8 @@ namespace _2018_7_29_one
 
             Console.WriteLine("숙제 값은" + v90);
             // Day-10
-            Console.WriteLine("10일차. 드디어 계산기 !!!");
+#endif
+            Console.WriteLine("10일차. 계산기 !!!");
             Console.WriteLine("원하는 사칙연산은?");
             Console.WriteLine("1) 덧셈");
             Console.WriteLine("2) 뺄셈");
@@ -367,10 +369,6 @@ namespace _2018_7_29_one
             Console.WriteLine("2번째 숫자 입력 하십시오");
             String str1000_3 = Console.ReadLine();
             int v1002 = Convert.ToInt32(str1000_3);
-
-
-
-
 
             int answer1000 = 0;
 
@@ -397,7 +395,7 @@ namespace _2018_7_29_one
                 Console.WriteLine("나눗셈선택하셨습니다.");
                 answer1000 = Divide(v1001, v1002);
             }
-
+            Console.WriteLine("");
             Console.WriteLine("결과값은" + answer1000);
         }
 
