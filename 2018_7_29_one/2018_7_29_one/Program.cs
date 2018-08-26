@@ -332,7 +332,7 @@ namespace _2018_7_29_one
             int v84 = Multiply(10, 10);
             Console.WriteLine("Multiply 값은 " + v84);
 
-            int v85 = divide(10, 2);
+            int v85 = Divide(10, 2);
             Console.WriteLine("divide 값은 " + v85);
 
             // Subtract(1000, 300) => 700
@@ -349,7 +349,56 @@ namespace _2018_7_29_one
             int v90 = Add(v105, v101);
 
             Console.WriteLine("숙제 값은" + v90);
+            // Day-10
+            Console.WriteLine("10일차. 드디어 계산기 !!!");
+            Console.WriteLine("원하는 사칙연산은?");
+            Console.WriteLine("1) 덧셈");
+            Console.WriteLine("2) 뺄셈");
+            Console.WriteLine("3) 곱셈");
+            Console.WriteLine("4) 나눗셈");
 
+            String str10 = Console.ReadLine();
+            int v1000 = Convert.ToInt32(str10);
+
+            Console.WriteLine("첫번째 숫자 입력 하십시오");
+            String str1000_2 = Console.ReadLine();
+            int v1001 = Convert.ToInt32(str1000_2);
+
+            Console.WriteLine("2번째 숫자 입력 하십시오");
+            String str1000_3 = Console.ReadLine();
+            int v1002 = Convert.ToInt32(str1000_3);
+
+
+
+
+
+            int answer1000 = 0;
+
+            if (v1000 == 1 )
+            {
+                Console.WriteLine("덧셈선택하셨습니다.");
+                answer1000 = Add(v1001, v1002);
+            }
+
+            if (v1000 == 2)
+            {
+                Console.WriteLine("뺄셈선택하셨습니다.");
+                answer1000 = Subtract(v1001, v1002);
+            }
+
+            if (v1000 == 3)
+            {
+                Console.WriteLine("곱셈선택하셨습니다.");
+                answer1000 = Multiply(v1001, v1002);
+            }
+
+            if (v1000 == 4)
+            {
+                Console.WriteLine("나눗셈선택하셨습니다.");
+                answer1000 = Divide(v1001, v1002);
+            }
+
+            Console.WriteLine("결과값은" + answer1000);
         }
 
         // 함수의 모양
@@ -378,8 +427,7 @@ namespace _2018_7_29_one
         {
             return firstInput + secondInput;
         }
-
-    
+            
 
         static int Subtract(int firstInput, int secondInput) // 들어오는 값 input. <== x
         {
@@ -392,7 +440,7 @@ namespace _2018_7_29_one
 
         }
 
-        static int divide(int firstInput, int secondInput) // 들어오는 값 input. <== x
+        static int Divide(int firstInput, int secondInput) // 들어오는 값 input. <== x
         {
             return firstInput / secondInput;
 
